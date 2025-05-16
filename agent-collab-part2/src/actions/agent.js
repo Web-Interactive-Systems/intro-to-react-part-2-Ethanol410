@@ -20,3 +20,11 @@ export const onDummyAgent = async function* () {
     await new Promise((resolve) => setTimeout(resolve, 30 + Math.random() * 50)) // simulate typing
   }
 }
+
+// export const $selectedAgentId = atom('')
+
+// export const $agents = atom ([
+
+// ])
+
+// export const addAgent
