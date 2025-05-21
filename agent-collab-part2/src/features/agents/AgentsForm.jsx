@@ -12,6 +12,7 @@ import {
   Slider,
   Text,
 } from '@radix-ui/themes'
+import EmojiPicker from './EmojiPicker'
 
 function AgentsForm({ onClose }) {
   const form = useStore($agentForm)
@@ -50,12 +51,9 @@ function AgentsForm({ onClose }) {
         gap='3'>
         <label>
           Emoji
-          <TextField.Root
-            name='emoji'
+          <EmojiPicker
             value={form.emoji}
-            onChange={handleChange}
-            placeholder='😀'
-            style={{ marginTop: 4 }}
+            onChange={(emoji) => setAgentForm({ emoji })}
           />
         </label>
         <label>

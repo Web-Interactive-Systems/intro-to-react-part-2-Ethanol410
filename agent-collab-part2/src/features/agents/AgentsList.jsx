@@ -38,11 +38,13 @@ function AgentsList({ onEdit, onAdd, selectedAgent }) {
             <span style={{ fontSize: 28 }}>{agent.emoji}</span>
             <Box>
               <Text
+                as='div'
                 mr='4'
                 weight='bold'>
                 {agent.title}
               </Text>
               <Text
+                as='div'
                 size='2'
                 color='gray'>
                 {agent.role}
