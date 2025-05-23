@@ -18,7 +18,16 @@ function AgentsList({ onEdit, onAdd, selectedAgent }) {
           marginLeft: 18,
           alignItems: 'center',
         }}>
-        <Button onClick={onAdd}>+ Ajouter</Button>
+        <Card
+          style={{
+            display: 'flex',
+            flexDirection: 'row',
+            padding: '8px 12px',
+            alignItems: 'center',
+            gap: 15,
+          }}>
+          <Button onClick={onAdd}>+ Ajouter</Button>
+        </Card>
       </Flex>
       <Flex
         direction='column'
